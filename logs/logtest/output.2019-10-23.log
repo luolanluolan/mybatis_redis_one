@@ -1,0 +1,112 @@
+2019-10-23  14:27:27.820 [http-nio-8099-exec-1] INFO  org.apache.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:414)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:294)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-10-23  14:27:31.188 [http-nio-8099-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-23  14:27:31.189 [http-nio-8099-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-10-23  14:27:31.189 [http-nio-8099-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2019-10-23  14:27:31.205 [http-nio-8099-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-10-23  14:27:31.205 [http-nio-8099-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2019-10-23  14:27:31.232 [http-nio-8099-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swagger-resources", parameters={}
+2019-10-23  14:27:31.237 [http-nio-8099-exec-2] DEBUG o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-10-23  14:27:31.296 [http-nio-8099-exec-2] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-10-23  14:27:31.296 [http-nio-8099-exec-2] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing [[springfox.documentation.swagger.web.SwaggerResource@495f4f4a]]
+2019-10-23  14:27:31.334 [http-nio-8099-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-10-23  14:27:31.356 [http-nio-8099-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/v2/api-docs", parameters={}
+2019-10-23  14:27:31.356 [http-nio-8099-exec-8] DEBUG o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2019-10-23  14:27:31.502 [http-nio-8099-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'application/json;charset=utf-8', given [application/json;charset=utf-8, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-10-23  14:27:31.502 [http-nio-8099-exec-8] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing [springfox.documentation.spring.web.json.Json@19ab300]
+2019-10-23  14:27:31.503 [http-nio-8099-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-10-23  14:27:31.538 [http-nio-8099-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/configuration/security", parameters={}
+2019-10-23  14:27:31.538 [http-nio-8099-exec-9] DEBUG o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-10-23  14:27:31.538 [http-nio-8099-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/configuration/ui", parameters={}
+2019-10-23  14:27:31.539 [http-nio-8099-exec-10] DEBUG o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-10-23  14:27:31.541 [http-nio-8099-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-10-23  14:27:31.541 [http-nio-8099-exec-10] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-10-23  14:27:31.541 [http-nio-8099-exec-9] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing [springfox.documentation.swagger.web.SecurityConfiguration@3408f845]
+2019-10-23  14:27:31.542 [http-nio-8099-exec-10] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing [springfox.documentation.swagger.web.UiConfiguration@45c53630]
+2019-10-23  14:27:31.542 [http-nio-8099-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-10-23  14:27:31.542 [http-nio-8099-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2019-10-23  14:28:43.030 [http-nio-8099-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/swaggerUi/testRedisCache/101", parameters={}
+2019-10-23  14:28:43.035 [http-nio-8099-exec-3] DEBUG o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to public com.origin.entity.LoginInfoDto com.origin.web.controller.TestCacheBasicController.testRedisCache(java.lang.Integer)
+2019-10-23  14:28:43.094 [http-nio-8099-exec-3] DEBUG org.springframework.data.redis.core.RedisConnectionUtils - Opening RedisConnection
+2019-10-23  14:28:43.145 [http-nio-8099-exec-3] DEBUG io.lettuce.core.RedisClient - Trying to get a Redis connection for: RedisURI [host='192.168.101.65', port=6379]
+2019-10-23  14:28:43.311 [http-nio-8099-exec-3] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2019-10-23  14:28:43.312 [http-nio-8099-exec-3] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2019-10-23  14:28:43.315 [http-nio-8099-exec-3] DEBUG io.lettuce.core.resource.DefaultEventLoopGroupProvider - Allocating executor io.netty.channel.nio.NioEventLoopGroup
+2019-10-23  14:28:43.315 [http-nio-8099-exec-3] DEBUG io.lettuce.core.resource.DefaultEventLoopGroupProvider - Creating executor io.netty.channel.nio.NioEventLoopGroup
+2019-10-23  14:28:43.315 [http-nio-8099-exec-3] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+2019-10-23  14:28:43.319 [http-nio-8099-exec-3] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2019-10-23  14:28:43.319 [http-nio-8099-exec-3] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2019-10-23  14:28:43.324 [http-nio-8099-exec-3] DEBUG io.lettuce.core.resource.DefaultEventLoopGroupProvider - Adding reference to io.netty.channel.nio.NioEventLoopGroup@770370df, existing ref count 0
+2019-10-23  14:28:43.354 [http-nio-8099-exec-3] DEBUG io.lettuce.core.RedisClient - Resolved SocketAddress 192.168.101.65:6379 using RedisURI [host='192.168.101.65', port=6379]
+2019-10-23  14:28:43.355 [http-nio-8099-exec-3] DEBUG io.lettuce.core.RedisClient - Connecting to Redis at 192.168.101.65:6379
+2019-10-23  14:28:43.365 [http-nio-8099-exec-3] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 4520 (auto-detected)
+2019-10-23  14:28:43.367 [http-nio-8099-exec-3] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2019-10-23  14:28:43.367 [http-nio-8099-exec-3] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2019-10-23  14:28:43.482 [http-nio-8099-exec-3] DEBUG io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2019-10-23  14:28:43.483 [http-nio-8099-exec-3] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2019-10-23  14:28:43.610 [http-nio-8099-exec-3] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: fc:3d:93:ff:fe:b4:ab:42 (auto-detected)
+2019-10-23  14:28:43.654 [http-nio-8099-exec-3] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2019-10-23  14:28:43.655 [http-nio-8099-exec-3] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2019-10-23  14:28:43.655 [http-nio-8099-exec-3] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2019-10-23  14:28:43.682 [lettuce-nioEventLoop-4-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2019-10-23  14:28:43.682 [lettuce-nioEventLoop-4-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2019-10-23  14:28:43.682 [lettuce-nioEventLoop-4-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2019-10-23  14:28:43.682 [lettuce-nioEventLoop-4-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2019-10-23  14:28:43.689 [lettuce-nioEventLoop-4-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+2019-10-23  14:28:43.689 [lettuce-nioEventLoop-4-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+2019-10-23  14:28:43.689 [lettuce-nioEventLoop-4-1] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@45147895
+2019-10-23  14:28:43.724 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.CommandHandler - [channel=0xe5cdc641, [id: 0x7cfd55c1] (inactive), chid=0x1] channelRegistered()
+2019-10-23  14:28:43.729 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.CommandHandler - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, chid=0x1] channelActive()
+2019-10-23  14:28:43.730 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.DefaultEndpoint - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, epid=0x1] activateEndpointAndExecuteBufferedCommands 0 command(s) buffered
+2019-10-23  14:28:43.730 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.DefaultEndpoint - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, epid=0x1] activating endpoint
+2019-10-23  14:28:43.730 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.DefaultEndpoint - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, epid=0x1] flushCommands()
+2019-10-23  14:28:43.730 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.DefaultEndpoint - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, epid=0x1] flushCommands() Flushing 0 commands
+2019-10-23  14:28:43.730 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.ConnectionWatchdog - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, last known addr=/192.168.101.65:6379] channelActive()
+2019-10-23  14:28:43.730 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.ConnectionWatchdog - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, last known addr=/192.168.101.65:6379] channelActive()
+2019-10-23  14:28:43.731 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.CommandHandler - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, chid=0x1] channelActive() done
+2019-10-23  14:28:43.731 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.RedisClient - Connecting to Redis at 192.168.101.65:6379: Success
+2019-10-23  14:28:43.733 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.ConnectionWatchdog - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, last known addr=/192.168.101.65:6379] userEventTriggered(ctx, io.lettuce.core.ConnectionEvents$Activated@7d0e7da7)
+2019-10-23  14:28:43.733 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.ConnectionWatchdog - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, last known addr=/192.168.101.65:6379] userEventTriggered(ctx, io.lettuce.core.ConnectionEvents$Activated@7d0e7da7)
+2019-10-23  14:28:43.754 [http-nio-8099-exec-3] DEBUG io.lettuce.core.RedisChannelHandler - dispatching command AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+2019-10-23  14:28:43.756 [http-nio-8099-exec-3] DEBUG io.lettuce.core.protocol.DefaultEndpoint - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+2019-10-23  14:28:43.758 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.CommandHandler - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, chid=0x1] write(ctx, AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+2019-10-23  14:28:43.759 [http-nio-8099-exec-3] DEBUG io.lettuce.core.protocol.DefaultEndpoint - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, epid=0x1] write() done
+2019-10-23  14:28:43.762 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.CommandEncoder - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379] writing command AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+2019-10-23  14:28:43.767 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.CommandHandler - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, chid=0x1] Received: 5 bytes, 1 commands in the stack
+2019-10-23  14:28:43.768 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.CommandHandler - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, chid=0x1] Stack contains: 1 commands
+2019-10-23  14:28:43.768 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.RedisStateMachine - Decode AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+2019-10-23  14:28:43.776 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.RedisStateMachine - Decoded AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+2019-10-23  14:28:43.776 [http-nio-8099-exec-3] DEBUG org.springframework.data.redis.core.RedisConnectionUtils - Closing Redis Connection
+2019-10-23  14:28:43.803 [http-nio-8099-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2019-10-23  14:28:43.806 [http-nio-8099-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ab7dc53] was not registered for synchronization because synchronization is not active
+2019-10-23  14:28:43.823 [http-nio-8099-exec-3] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2019-10-23  14:28:44.027 [http-nio-8099-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@69007c13] will not be managed by Spring
+2019-10-23  14:28:44.031 [http-nio-8099-exec-3] DEBUG com.origin.dao.TestCacheBasicDao.testCacheNonTransaction - ==>  Preparing: select * from logininfo c where c.id=? 
+2019-10-23  14:28:44.049 [http-nio-8099-exec-3] DEBUG com.origin.dao.TestCacheBasicDao.testCacheNonTransaction - ==> Parameters: 101(Integer)
+2019-10-23  14:28:44.065 [http-nio-8099-exec-3] DEBUG com.origin.dao.TestCacheBasicDao.testCacheNonTransaction - <==      Total: 1
+2019-10-23  14:28:44.066 [http-nio-8099-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ab7dc53]
+2019-10-23  14:28:44.067 [http-nio-8099-exec-3] DEBUG org.springframework.data.redis.core.RedisConnectionUtils - Opening RedisConnection
+2019-10-23  14:28:44.069 [http-nio-8099-exec-3] DEBUG io.lettuce.core.RedisChannelHandler - dispatching command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+2019-10-23  14:28:44.069 [http-nio-8099-exec-3] DEBUG io.lettuce.core.protocol.DefaultEndpoint - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+2019-10-23  14:28:44.069 [http-nio-8099-exec-3] DEBUG io.lettuce.core.protocol.DefaultEndpoint - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, epid=0x1] write() done
+2019-10-23  14:28:44.069 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.CommandHandler - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, chid=0x1] write(ctx, AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+2019-10-23  14:28:44.070 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.CommandEncoder - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379] writing command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+2019-10-23  14:28:44.070 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.CommandHandler - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, chid=0x1] Received: 5 bytes, 1 commands in the stack
+2019-10-23  14:28:44.070 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.CommandHandler - [channel=0xe5cdc641, /192.168.101.1:53003 -> /192.168.101.65:6379, chid=0x1] Stack contains: 1 commands
+2019-10-23  14:28:44.071 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.RedisStateMachine - Decode AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+2019-10-23  14:28:44.071 [lettuce-nioEventLoop-4-1] DEBUG io.lettuce.core.protocol.RedisStateMachine - Decoded AsyncCommand [type=SETEX, output=StatusOutput [output=OK, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+2019-10-23  14:28:44.071 [http-nio-8099-exec-3] DEBUG org.springframework.data.redis.core.RedisConnectionUtils - Closing Redis Connection
+2019-10-23  14:28:44.074 [http-nio-8099-exec-3] DEBUG o.s.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-10-23  14:28:44.075 [http-nio-8099-exec-3] DEBUG o.s.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [LoginInfoDto{id=101, userName='张三'}]
+2019-10-23  14:28:44.086 [http-nio-8099-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK

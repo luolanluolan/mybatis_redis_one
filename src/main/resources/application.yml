@@ -1,0 +1,35 @@
+server:
+  port: 8099
+  tomcat:
+    max-threads: 10
+spring:
+  application:
+    name: mysql
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mysql?characterEncoding=utf-8
+    username: root
+    password: root
+  thymeleaf:
+    cache: true
+    #redis 的配置  主备,高可用需要怎么样配置???   为了省事，也没有设置密码（生产环境下，这是严格禁止的）,
+    #那么配置密码,这个密码是动态加载,还是说,写到配置文件里面???
+  redis:
+    host: 192.168.101.65
+    port: 6379
+    password:     #redis服务器密码，默认为空，有两种设置方式（1、设置临时，config set requirepass 密码  2、设置永久，redis.confgi文件修改requirepass
+#    cluster:
+#      nodes:                        # ip:端口   ,号连接
+#      max-redirects: 3
+    lettuce:
+      pool:
+        max-idle: 16      #闲置
+        max-active: 32    #活跃
+        min-idle: 8
+
+
+    #配置mybatis 二级缓存
+mybatis:
+  configuration:
+    cache-enabled: false
